@@ -15,6 +15,9 @@
       />
     </a>
 
+    <a href="mailto:justin@libhart.dev">justin@libhart.dev</a>
+    <a>Joe's Email</a>
+
     <div
       class="text-caption text-disabled"
       style="position: absolute; right: 16px;"
@@ -30,7 +33,7 @@
       title: 'Our GitHub',
       icon: `mdi-github`,
       href: 'https://github.com/Hunch-Medical-Inventory-System',
-    },
+    }
   ]
 </script>
 

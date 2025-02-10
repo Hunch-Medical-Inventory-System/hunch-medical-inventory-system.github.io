@@ -88,7 +88,7 @@ export const readExpirableDataFromTable = async (
       .from(table)
       .select("*", { count: "exact" })
       .order("id", { ascending: true })
-      .is("crew_member_id", null)
+      .is("user_id", null)
       .gte("expiry_date", new Date().toISOString())
       .range(
         options.itemsPerPage * (options.page - 1),
@@ -99,7 +99,7 @@ export const readExpirableDataFromTable = async (
       .from(table)
       .select("*", { count: "exact" })
       .order("id", { ascending: true })
-      .not("crew_member_id", "is", null)
+      .not("user_id", "is", null)
       .range(
         options.itemsPerPage * (options.page - 1),
         options.itemsPerPage * options.page - 1
@@ -109,7 +109,7 @@ export const readExpirableDataFromTable = async (
       .from(table)
       .select("*", { count: "exact" })
       .order("id", { ascending: true })
-      .is("crew_member_id", null)
+      .is("user_id", null)
       .lt("expiry_date", new Date().toISOString())
       .range(
         options.itemsPerPage * (options.page - 1),
