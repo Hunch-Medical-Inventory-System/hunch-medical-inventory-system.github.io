@@ -1,7 +1,7 @@
 <template>
   <div class="scanner-container">
     <div class="scan-area">
-      <img src="/workspaces/front-end/src/assets/qr-code.png" alt="QR Code" class="scan-icon" />
+      <img src="@/assets/qr-code.png" alt="QR Code" class="scan-icon" />
     </div>
     <p class="scan-text">Hold up an NFC enabled device to scan</p>
     <button @click="startScan" class="scan-button">SCAN!</button>
